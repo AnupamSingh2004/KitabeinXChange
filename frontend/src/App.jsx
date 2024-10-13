@@ -3,6 +3,7 @@ import Login from "./pages/login/login.jsx";
 import Signup from "./pages/signup/signup.jsx";
 import Home from "./pages/Home/home.jsx";
 import BookDetails from "./pages/BookDetailsPage/bookDetails.jsx";
+import Profile from "./pages/Profile/profile.jsx";
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
             <BookDetails/>
           }/>
 
+          <Route path="/profile" element={
+            <Profile/>
+          }/>
 
           <Route path="/login" element={
             <Login/>
