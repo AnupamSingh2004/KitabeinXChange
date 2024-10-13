@@ -1,0 +1,237 @@
+/* styles.css */
+
+/* Reset some basic browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefbd8; /* Updated background color */
+  color: #333;
+}
+
+.container {
+  width: 30%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #3e4444; /* Updated navbar color */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.book-form {
+  margin-top: 20px;
+}
+
+.book-fields .book-entry {
+  margin-bottom: 20px;
+}
+
+.book-entry h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #00416a;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* Button Styling with New Colors */
+.btn-add-book, 
+.btn-submit, 
+.remove-book-btn {
+  background-color: #82b74b; /* New button color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.remove-book-btn {
+  background-color: #e74c3c;
+}
+
+.remove-book-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Hover effect for buttons */
+.btn-add-book:hover, 
+.btn-submit:hover {
+  background-color: #240e67; /* New hover color */
+  color: white; /* Ensure text is visible on hover */
+}
+
+hr {
+  margin-top: 20px;
+  border-color: #ccc;
+}
+
+/* Reset some basic browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefbd8; /* Updated background color */
+  color: #333;
+}
+
+.container {
+  width: 30%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #3e4444; /* Updated navbar color */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+/* Image preview */
+.image-preview {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block; /* Initially hidden; shown when an image is selected */
+}
+footer{
+  color:black;
+  text-align: center;
+} 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3e4444;
+  color: white;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}

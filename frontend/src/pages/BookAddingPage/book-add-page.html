@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitabeXchange - Add Books</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">KitabeXchange</div>
+        <ul class="nav-links">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="addBook.html">Add Books</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <!-- Container for Adding Books -->
+    <div class="container">
+        <h1>Add Your Books to Sell or Exchange</h1>
+        <p>You can add multiple books at once using the form below:</p>
+
+        <form id="book-form" class="book-form" action="#" method="post">
+            <div id="book-fields" class="book-fields">
+                <!-- Book Field Group -->
+                <div class="book-entry">
+                    <h2>Book 1</h2>
+                    <div class="form-group">
+                        <label for="bookTitle1">Book Title:</label>
+                        <input type="text" id="bookTitle1" name="bookTitle[]" placeholder="Enter the book title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="authorName1">Author Name:</label>
+                        <input type="text" id="authorName1" name="authorName[]" placeholder="Enter the author's name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookCondition1">Condition:</label>
+                        <select id="bookCondition1" name="bookCondition[]" required>
+                            <option value="new">New</option>
+                            <option value="used">Used - Good</option>
+                            <option value="used-fair">Used - Fair</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookImage1">Upload Book Image:</label>
+                        <label class="custom-file-upload">
+                            <input type="file" id="bookImage1" name="bookImage[]" accept="image/*" onchange="previewImage(event, 1)" required>
+                            Choose Image File
+                        </label>
+                        <img id="previewImage1" class="image-preview" alt="Image Preview" style="display:none;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price1">Price (₹):</label>
+                        <input type="number" id="price1" name="price[]" placeholder="Set your price" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exchangeOption1">Interested in Exchange?</label>
+                        <select id="exchangeOption1" name="exchangeOption[]" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description1">Description:</label>
+                        <textarea id="description1" name="description[]" rows="4" placeholder="Add a brief description of the book (Optional)"></textarea>
+                    </div>
+
+                    <button type="button" class="remove-book-btn">Remove Book</button>
+                    <button type="button" id="add-book-btn" class="btn-add-book">Add Another Book</button>
+
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Buttons to Add More Books -->
+            <button type="submit" class="btn-submit">Submit Books</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <footer>
+      <p>&copy; 2024 KitabeXchange. All rights reserved.</p>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
